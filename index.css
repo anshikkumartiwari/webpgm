@@ -5,21 +5,28 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 
 h1 {
     color: #0056b3;
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
