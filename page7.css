@@ -1,90 +1,105 @@
-html,body {
-	height: 100%;
-	margin: 0;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	padding: 0;
-	background-color: red;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #ffe4e1; /* Light pink background for the body */
 }
-
 
 .navbar {
-	background-color: blue;
-	color : white;
-	text-align: center;
+    background-color: #171717; /* Chocolate color for the navbar */
+    color: white;
+    text-align: center;
+
 }
 
-.container{
-	display:flex;
-	height: 90vh;
+.container {
+    display: flex;
+    height: 80%;
+    border-radius: 3px;
+
 }
 
-.main{
-	flex:3;
-	margin: 1vw;
-	padding: 2vw;
-	background-color: green;
-}
-h2 {
+.main {
+    flex: 3;
+    margin: 1vw;
+    padding: 2vw;
+    background-color: rgb(255, 137, 131); /* Keeping this color as is */
+    border-radius: 3px;
 
 }
 
 .content {
-	display: flex;
-	gap: 1vh;
+    margin: 1vw;
+    padding: 2vw;
+    background-color: rgb(255, 198, 195); /* Keeping this color as is */
+    border-radius: 3px;
+
+}
+
+.image-container {
+    float: left;
+    margin: 20 20px 0 0;
+    text-align: center;
+    max-width: 300px;
 }
 
 .image {
-	width: 40%;
-	max-width: 300px;
-	height: auto;
-	border-radius: 2px;
-}
-	
-
-#para {
-	flex:1;
+    max-width: 100%;
+    border-radius: 3px;
 }
 
 #caption {
-	color: gray;
+    color: gray;
+    font-size: 0.9em;
+    margin-top: 5px;
 }
 
-aside{
-	flex : 1;
-	display: flex;
-	gap: 1vh;
-	flex-direction: column;
-	margin: 1vw;
-	padding: 2vw;
-	background-color: blue;
-	color: white;
+#para {
+    text-align: justify;
 }
 
-aside>*{
-	border-radius: 15px;
-	padding: 2vw;
-
+aside {
+    flex: 1;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    padding: 2vw;
+    background-color: #ffe4e1; /* Light pink for aside background */
+    color: white;
 }
 
-.upside{
-	flex: 2;
-	background-color: maroon;
-}
-.downside{
-	flex: 1;
-	background-color: yellow;
-	color: black;
+aside > * {
+    border-radius: 5px;
+    padding: 2vw;
 }
 
+.upside {
+    flex: 2;
+    background-color: #171717; /* Hot pink for upside */
+    margin-bottom: 1vh;
+}
 
-.footer{
-	background-color: blue;
-	color: white;
-	margin-bottom: 0;
-	text-align: center;
+.downside {
+    flex: 1;
+    background-color: rgb(255, 137, 131); /* Light pink for downside */
+    color: #2a1212; /* Dark brown text color */
+    margin-top: 1vh;
+}
+
+.footer {
+    background-color: #171717; /* Chocolate color for the footer */
+    color: white;
+    text-align: center;
+    height: 40px; /* Adjust this value based on your desired footer height */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
